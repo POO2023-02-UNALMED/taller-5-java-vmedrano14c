@@ -1,8 +1,8 @@
-package zooAnimales;
+package zooAnimal;
 
 import java.util.ArrayList;
 
-public class Mamifero {
+public class Mamifero extends Animal {
 	private static ArrayList<Mamifero> listado = new ArrayList<Mamifero>();
 	public static int caballos = 0;
 	public static int leones = 0;
@@ -15,7 +15,7 @@ public class Mamifero {
 	}
 
 	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
-		super();
+		super(nombre, edad, habitat, genero);
 		this.pelaje = pelaje;
 		this.patas = patas;
 		listado.add(this);
@@ -55,5 +55,4 @@ public class Mamifero {
 	public void setPatas(int patas) {
 		this.patas = patas;
 	}
-
 }

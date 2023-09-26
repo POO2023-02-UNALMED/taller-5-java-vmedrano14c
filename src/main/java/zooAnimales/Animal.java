@@ -1,4 +1,5 @@
 package zooAnimales;
+
 import gestion.Zona;
 
 public class Animal {
@@ -8,11 +9,11 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
-		
+	
 	public Animal() {
-			totalAnimales += 1;
+		totalAnimales += 1;
 	}
-		
+	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -25,30 +26,30 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-		
+	
 	public String toString() {
 		String message = String.format("Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s", nombre, edad, habitat, genero);
-			
+		
 		if (zona != null) {
 			message = String.format("%s, la zona en la que me ubico es %s, en el %s", message, zona.getNombre(), zona.getZoo().getNombre());
 		}
-			
+		
 		return message;
 	}
-		
+	
 	public static String totalPorTipo() {
 		int totalMamiferos = Mamifero.cantidadMamiferos();
-		int totalAves = Ave.cantidadAves();
-		int totalReptiles = Reptil.cantidadReptiles();
-		int totalPeces = Pez.cantidadPeces();
-		int totalAnfibios = Anfibio.cantidadAnfibios();
+	    int totalAves = Ave.cantidadAves();
+	    int totalReptiles = Reptil.cantidadReptiles();
+	    int totalPeces = Pez.cantidadPeces();
+	    int totalAnfibios = Anfibio.cantidadAnfibios();
 
-		    String resultado = String.format("Mamiferos: %d\nAves: %d\nReptiles: %d\nPeces: %d\nAnfibios: %d",
-		            totalMamiferos, totalAves, totalReptiles, totalPeces, totalAnfibios);
+	    String resultado = String.format("Mamiferos: %d\nAves: %d\nReptiles: %d\nPeces: %d\nAnfibios: %d",
+	            totalMamiferos, totalAves, totalReptiles, totalPeces, totalAnfibios);
 
-		    return resultado;
-		}
-		
+	    return resultado;
+	}
+	
 	public static int getTotalAnimales() {
 		return totalAnimales;
 	}
