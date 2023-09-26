@@ -1,4 +1,4 @@
-package zooAnimal;
+package zooAnimales;
 
 import java.util.ArrayList;
 
