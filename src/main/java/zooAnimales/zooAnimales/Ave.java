@@ -14,7 +14,7 @@ import java.util.ArrayList;
 	}
 
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-		super(nombre, edad, habitat, genero);
+		super();
 		this.colorPlumas = colorPlumas;
 		listado.add(this);
 	}
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 		return aguila;
 	}
 	
-	@Override
+	
 	public String movimiento() {
 		return "volar";
 	}

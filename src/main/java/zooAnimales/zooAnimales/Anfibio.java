@@ -14,7 +14,7 @@ public class Anfibio {
 	}
 	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
-		super(nombre, edad, habitat, genero);
+		super();
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
 		listado.add(this);
@@ -24,7 +24,7 @@ public class Anfibio {
 		return listado.size();
 	}
 	
-	@Override
+	
 	public String movimiento() {
 		return "saltar";
 	}

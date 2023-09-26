@@ -20,6 +20,8 @@ public class Zona {
 		this.animales = new ArrayList<Animal>();
 	}
 
+	
+	 
 	public int cantidadAnimales() {
         int cantidadAnimales = 0;
         for (Animal animal : animales){

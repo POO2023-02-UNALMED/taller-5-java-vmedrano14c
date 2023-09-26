@@ -15,7 +15,7 @@ public class Pez {
 	}
 
 	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
-		super(nombre, edad, habitat, genero);
+		super();
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
 		listado.add(this);
@@ -34,7 +34,7 @@ public class Pez {
 	}
 
 	
-	@Override
+	
 	public String movimiento() {
 		return "nadar";
 	}
